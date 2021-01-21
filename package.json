@@ -1,8 +1,9 @@
 {
   "name": "postcss-uni-px2rpx",
   "version": "1.0.1",
-  "description": "",
+  "description": "uniapp下的px2rpx postcss插件",
   "main": "index.js",
+  "repository": "https://github.com/mtnbgx/postcss-uni-px2rpx.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
