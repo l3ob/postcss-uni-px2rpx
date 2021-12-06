@@ -1,6 +1,6 @@
 {
   "name": "postcss-uni-px2rpx-exclude",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "uniapp下的px2rpx postcss插件",
   "main": "index.js",
   "repository": "https://github.com/l3ob/postcss-uni-px2rpx.git",
