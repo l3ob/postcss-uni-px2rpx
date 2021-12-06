@@ -1,6 +1,9 @@
 const postcss = require('postcss')
 module.exports = postcss.plugin('postcss-uni-px2rpx', (options = {}) => {
     return root => {
+        if (options.exclude && root.source.input.file.match(options.exclude) !== null) {
+          return
+        }
         root.walkDecls(decl => {
             if (decl.value.indexOf(' rpx') !== -1) {
                 decl.value = decl.value.replace(' rpx', 'rpx')

@@ -12,7 +12,9 @@ npm i postcss-uni-px2rpx
 const pkg = require('./package.json')
 module.exports = {
     plugins: [
-        require('postcss-uni-px2rpx'),//插入此行
+        require('postcss-uni-px2rpx')({
+            exclude: /node_modules|folder_name/i
+        }),//插入此行
         require('postcss-import'),
         require('autoprefixer')({
             browsers: pkg.browserslist,
@@ -27,6 +29,7 @@ module.exports = {
 
 + 空格rpx替换为rpx
 + px替换为rpx(需要px请写Px)
++ 增加exlude参数用来排除不需要转换的目录
 
 ## 作用范围
 
