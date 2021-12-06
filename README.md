@@ -3,7 +3,7 @@
 ## 使用方法
 
 ```bash
-npm i postcss-uni-px2rpx
+npm i postcss-uni-px2rpx-exclude
 ```
 
 ```js
