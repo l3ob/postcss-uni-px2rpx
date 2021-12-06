@@ -12,7 +12,7 @@ npm i postcss-uni-px2rpx
 const pkg = require('./package.json')
 module.exports = {
     plugins: [
-        require('postcss-uni-px2rpx')({
+        require('postcss-uni-px2rpx-exclude')({
             exclude: /node_modules|folder_name/i
         }),//插入此行
         require('postcss-import'),
